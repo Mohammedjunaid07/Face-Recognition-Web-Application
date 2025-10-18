@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Face Recognition System</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>AI Face Recognition</h1>
+        
+        <div class="video-wrapper">
+            <video id="video" autoplay muted playsinline></video>
+            <canvas id="canvas"></canvas>
+            <div id="status-overlay" class="status-loading">Loading Models...</div>
+        </div>
+
+        <div class="controls-panel">
+            <div id="recognition-status">
+                <p>Status: <span id="model-status">Initializing...</span></p>
+                <p>Last Match: <span id="last-match">N/A</span></p>
+            </div>
+            <button id="capture" class="btn">Capture Face for Enrollment (Feature Placeholder)</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
